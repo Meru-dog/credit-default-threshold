@@ -124,7 +124,7 @@ In the low-cost scenario, the theoretical threshold of 0.25 had a lower test cos
 | Final pipeline and threshold are recorded as a W&B Artifact | Passed |
 | Gradio simulator updates with cost ratio and threshold | Passed |
 | Assumptions and limitations are documented | Passed |
-| Repository is public, in English, and free of secrets | Pending |
+| Repository is public, in English, and free of secrets | Passed |
 
 ## 9. Limitations
 
@@ -135,5 +135,5 @@ In the low-cost scenario, the theoretical threshold of 0.25 had a lower test cos
 - Excluding demographic columns does not establish fairness. Remaining features may act as proxies, and no fairness audit was performed.
 - Treating `PAY_` codes as numeric assumes an ordering that may not be meaningful for all codes.
 - Standard-deviation comparisons are simple heuristics, not statistical tests.
-- W&B runs record a notebook version label but not a Git commit ID.
+- W&B runs record a notebook version label but not a Git commit ID because they predate the repository. The published notebook was reviewed at commit `c9ed04e`.
 - This project does not satisfy the legal, regulatory, or model-risk requirements for real credit decisions.
